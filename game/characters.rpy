@@ -1,0 +1,5 @@
+define p = character("[charname]", who_color="#ff0")
+define j = character("Julie", who_color="#f0f")
+define m = character("Mom", who_color="#0d0")
+define g = character("General", who_color="072")
+define b = character("Businessman", who_color="#000")

@@ -1,0 +1,60 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/endings.rpy", line 26, in script
+    p "There were no survivors"
+  File "game/endings.rpy", line 26, in script
+    p "There were no survivors"
+IOError: Couldn't find file 'bomb drop.wav'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/bootstrap.py", line 326, in bootstrap
+    renpy.main.main()
+  File "renpy/main.py", line 617, in main
+    run(restart)
+  File "renpy/main.py", line 148, in run
+    renpy.execution.run_context(True)
+  File "renpy/execution.py", line 922, in run_context
+    context.run()
+  File "game/endings.rpy", line 26, in script
+    p "There were no survivors"
+  File "game/endings.rpy", line 26, in script
+    p "There were no survivors"
+  File "renpy/ast.py", line 715, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "renpy/exports.py", line 1384, in say
+    who(what, *args, **kwargs)
+  File "renpy/character.py", line 1179, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "renpy/character.py", line 851, in do_display
+    **display_args)
+  File "renpy/character.py", line 601, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3006, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3453, in interact_core
+    renpy.audio.audio.interact()
+  File "renpy/audio/audio.py", line 1148, in interact
+    periodic()
+  File "renpy/audio/audio.py", line 1101, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "renpy/audio/audio.py", line 1079, in periodic_thread_main
+    periodic_pass()
+  File "renpy/audio/audio.py", line 1021, in periodic_pass
+    c.periodic()
+  File "renpy/audio/audio.py", line 487, in periodic
+    topf = load(self.file_prefix + filename + self.file_suffix)
+  File "renpy/audio/audio.py", line 69, in load
+    rv = renpy.loader.load(fn)
+  File "renpy/loader.py", line 798, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'bomb drop.wav'.
+
+Windows-8.1-6.3.9600
+Ren'Py 7.4.1.1270
+Lemonade Stand Tycoon 1.0
+Sun Oct 24 11:14:14 2021

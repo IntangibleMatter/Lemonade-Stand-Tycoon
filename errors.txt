@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 4: expected statement.
+    charname = input("What is your name?")
+             ^
+
+Ren'Py Version: Ren'Py 7.4.1.1270
+Sat Oct 23 13:16:39 2021

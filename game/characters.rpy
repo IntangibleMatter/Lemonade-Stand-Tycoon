@@ -1,5 +1,6 @@
-define p = Character("[charname]", who_color="#ff0")
+define p = Character("[charname]", who_color="#d4d400")
 define j = Character("Julie", who_color="#f0f")
 define m = Character("Mom", who_color="#0d0")
-define g = Character("General", who_color="072")
+define g = Character("General", who_color="#072")
 define b = Character("Businessman", who_color="#000")
+define d = Character("Duck", who_color="#fb0")

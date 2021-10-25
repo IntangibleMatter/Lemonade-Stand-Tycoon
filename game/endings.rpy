@@ -17,7 +17,7 @@ label NukeEnding:
     p "{cps=5}R{alpha=0.95}e{/alpha}{alpha=0.9}m{/alpha}{alpha=0.85}e{/alpha}{alpha=0.8}m{/alpha}{alpha=0.75}b{/alpha}{alpha=0.7}e{/alpha}{alpha=0.65}r{/alpha} {alpha=0.6}m{/alpha}{alpha=0.55}e{/alpha}{alpha=0.5}.{/alpha}{alpha=0.45}.{/alpha}{alpha=0.4}.{/alpha}{/cps}"
     show player scared
     play sound "sound/bomb drop.wav"
-    #Fade(1.0, 1.863, 0.0, color="#fdd")
+    Fade(1.0, 1.863, 0.0, color="#fdd")
     jump black
 
 label black:

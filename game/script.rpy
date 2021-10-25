@@ -1,5 +1,5 @@
 default getbombed = False
-$price = .50
+
 
 label start:
     scene lemonade glass
@@ -16,13 +16,9 @@ label storystart:
     m "I'm so proud of you, sweetie."
     m "I've decided to buy you the supplies you need for the first day of lemoandery, but tomorrow you'll have to buy the supplies for yourself"
     hide mom
-    menu:
-        "I decided to charge..."
-        "50 cents":
-            $price = .50
-        "1 dollar":
-            $price = 1
-    p "I decided to charge $[price] for a glass of Lemonade."
-    jump NukeEnding
+    p "I decided to charge $0.50 for a glass of Lemonade, as this seemed reasonable for my first day of lemonadery."
+
+
+
 
 

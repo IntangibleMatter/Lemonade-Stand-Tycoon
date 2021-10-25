@@ -1,3 +1,13 @@
+label endings:
+    if tookTycoonDeal:
+        jump tycoonEnding
+    elif deniedGeneral:
+        jump NukeEnding
+    elif lovesDuck:
+        jump duckEnding
+    else:
+        jump normalEnding
+
 label NukeEnding:
     show general furious at right
     g "I warned you, you little @$&@!!"
@@ -18,13 +28,20 @@ label NukeEnding:
     show player scared
     play sound "sound/bomb drop.wav"
     Fade(1.0, 1.863, 0.0, color="#fdd")
-    jump black
-
-label black:
     scene black
     play sound "sound/atomic bomb roar.wav"
-    p "There were no survivors"
+    "There were no survivors"
     "Nuke Ending"
     return
 
 label TycoonEnding:
+    pass
+    return
+
+label duckEnding:
+    pass
+    return
+
+label normalEnding:
+    pass
+    return

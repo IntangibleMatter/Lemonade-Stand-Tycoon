@@ -4,3 +4,5 @@ define m = Character("Mom", who_color="#0d0")
 define g = Character("General", who_color="#072")
 define b = Character("Businessman", who_color="#000")
 define d = Character("Duck", who_color="#fb0")
+
+define bombflash = Fade(1.0, 1.863, 0.0, color="#fdd")

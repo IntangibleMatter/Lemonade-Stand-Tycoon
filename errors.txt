@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 4: expected statement.
-    charname = input("What is your name?")
-             ^
+File "game/endings.rpy", line 30: end of line expected.
+    jump black with bombflash
+               ^
 
 Ren'Py Version: Ren'Py 7.4.1.1270
-Sat Oct 23 13:16:39 2021
+Sun Oct 24 22:11:59 2021

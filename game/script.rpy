@@ -17,6 +17,7 @@ label storystart:
     m "I've decided to buy you the supplies you need for the first day of lemoandery, but tomorrow you'll have to buy the supplies for yourself"
     hide mom
     p "I decided to charge $0.50 for a glass of Lemonade, as this seemed reasonable for my first day of lemonadery."
+    jump NukeEnding
 
 
 

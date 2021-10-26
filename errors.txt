@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/endings.rpy", line 30: end of line expected.
-    jump black with bombflash
-               ^
+File "game/script.rpy", line 181: expected menuitem
+    jump daytwoend
+    ^
 
 Ren'Py Version: Ren'Py 7.4.1.1270
-Sun Oct 24 22:11:59 2021
+Tue Oct 26 00:17:34 2021

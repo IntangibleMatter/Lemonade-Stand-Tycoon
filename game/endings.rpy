@@ -102,7 +102,7 @@ label richDuckEnding:
     t "I'm not what I seem.."
     t "In reality, I am...."
     hide tycoon with moveouttop
-    show duck tycoon with moveinbottom
+    show duck tycoon at right with moveinbottom
     d "Quack <{i}the duck!!!{/i}>"
     d "quack <{i}and thanks to your grapes I am very rich, and I would like to share my money with you!{/i}>"
     hide duck tycoon

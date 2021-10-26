@@ -41,7 +41,7 @@ label dayone:
     p "With your work ethic, I assumed you wouldn't want to help."
     show julie sad at left
     j "c'mon, [jname], don't be like that."
-    j "you know i'd never miss a chance to get some [KROMER]."
+    j "you know i'd never miss a chance to get some [[KROMER]]."
     show julie spamton at left
     p "What?"
     show julie happy at left
@@ -61,7 +61,7 @@ label dayone:
     j "hiiiiiiiiiiiii...."
     d "QUACK <{i}greetings, ladies. I am but a humble duck.{/i}>"
     d "QUACK QUACK <{i}If possible, could you young ladies get me some glorious, wonderful grapes?{/i}>"
-    j "i mean if you want? {jname}, should i?"
+    j "i mean if you want? [jname], should i?"
     menu:
         "Give the duck grapes":
             $lovesDuck = True
@@ -69,7 +69,7 @@ label dayone:
             hide julie happy
             with moveoutleft
             p "She'll just be a-{nw}"
-            show julie happy
+            show julie happy at left
             with moveinleft
             j "I'M BACK"
             d "quack <{i}ah! Grapes! thank you.{/i}>"
@@ -113,7 +113,7 @@ label dayoneend:
         show chart day one noduck
         pause
         hide chart day one noduck
-    show julie happy at right
+    show julie happy at left
     show player happy
     p "Not bad for our first day!"
     j "yeah"
@@ -129,8 +129,8 @@ label dayoneend:
 
 label daytwo:
     j "gooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooood{nw}"
-    show julie happy at right
-    with moveinright
+    show julie happy at left
+    with moveinleft
     j "morning [jname]!!!!!!"
     p "*{i}yawn{/i}*"
     show player sad
@@ -177,8 +177,10 @@ label daytwo:
             hide general
             show general angry at right
             g "{b}You will regret this.{/b}"
+            hide general angry
+            with moveoutright
             j "i think we made the right choice, right?"
-        jump daytwoend
+    jump daytwoend
 
 label daytwoend:
     j "looks like we made..."
@@ -200,7 +202,7 @@ label daytwoend:
         show chart day two general
         pause
         hide chart day two general
-    show julie happy at right
+    show julie happy at left
     show player happy
     p "Not bad for our second day!"
     j "yeah"
@@ -217,7 +219,7 @@ label daytwoend:
 label daythree:
     show player happy
     p "Day three. We got this."
-    show julie happy
+    show julie happy at left
     with moveinright
     j "lemonadery we can do this lets go"
     "{i}Yet another average day, but then...{/i}"
@@ -262,7 +264,7 @@ label daythreeend:
         show chart day three nocapitalist
         pause
         hide chart day three nocapitalist
-    show julie happy at right
+    show julie happy at left
     show player happy
     p "Not bad!"
     j "yeah"

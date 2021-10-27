@@ -179,7 +179,7 @@ label duckSavesDayEnding:
     "{b}Duck Saves Day Ending{/b}"
     return
 
-label TycoonEnding:
+label tycoonEnding:
     show tycoon at right
     t "Alright, are you ready to give up your $oul and become a TYCOON?"
     show player happy

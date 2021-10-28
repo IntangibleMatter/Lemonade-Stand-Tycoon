@@ -18,6 +18,23 @@ label endings:
     else:
         jump defaultEnding
 
+label endingstest:
+    menu: 
+        "Make ducklove false" if lovesDuck:
+            $lovesDuck = False
+        "Make ducklove true" if not lovesDuck:
+            $lovesDuck = True
+        "Make deniedGeneral false" if deniedGeneral:
+            $deniedGeneral = False
+        "make deniedGeneral true" if not deniedGeneral:
+            $deniedGeneral = True
+        "make tookTycoonDeal false" if tookTycoonDeal:
+            $tookTycoonDeal = False
+        "make tookTycoonDeal true" if not tookTycoonDeal:
+            $tookTycoonDeal = True
+
+    call endings
+
 label bigEnding:
     show tycoon at right
     t "Alright, are you ready to give up your $oul and become a TYCOON?"

@@ -1,22 +1,24 @@
 label endings:
     show julie happy at left
     show player happy
-    if tookTycoonDeal and deniedGeneral and lovesDuck:
+    if lovesDuck and deniedGeneral and tookTycoonDeal:
         jump bigEnding
-    elif tookTycoonDeal and deniedGeneral and not lovesDuck:
+    elif (not lovesDuck) and deniedGeneral and tookTycoonDeal:
         jump moneyNukeEnding
-    elif tookTycoonDeal and not deniedGeneral and lovesDuck:
+    elif lovesDuck and (not deniedGeneral) and tookTycoonDeal:
         jump richDuckEnding
-    elif not tookTycoonDeal and deniedGeneral and lovesDuck:
+    elif lovesDuck and deniedGeneral and not tookTycoonDeal:
         jump duckSavesDayEnding
-    elif tookTycoonDeal and not deniedGeneral and not lovesDuck:
+    elif (not lovesDuck) and (not deniedGeneral) and tookTycoonDeal:
         jump tycoonEnding
-    elif not tookTycoonDeal and deniedGeneral and not lovesDuck:
+    elif (not lovesDuck) and deniedGeneral and (not tookTycoonDeal):
         jump nukeEnding
-    elif not tookTycoonDeal and not deniedGeneral and lovesDuck:
+    elif lovesDuck and (not deniedGeneral) and (not tookTycoonDeal):
         jump duckEnding
-    else:
+    elif (not lovesDuck) and (not deniedGeneral) and (not tookTycoonDeal):
         jump defaultEnding
+    else:
+        "{color=#f00}{b}Err: ending not found{/b}{/color}"
 
 label endingstest:
     menu: 
